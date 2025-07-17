@@ -10,11 +10,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Empresas Industriales de México"
+        android:text="Empresas Industriales de México\nRegistro"
         android:textColor="#2A2B7C"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:gravity="center"
         android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Nombre Usuario"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp" />
 
     <EditText
         android:id="@+id/txtCorreo"
@@ -34,14 +45,24 @@
         android:padding="12dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/txtRepetir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Reescriba la Contraseña"
+        android:inputType="textPassword"
         android:layout_marginBottom="20dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:gravity="center">
 
         <Button
             android:id="@+id/btnIngresar"
@@ -54,7 +75,7 @@
             android:layout_marginEnd="10dp" />
 
         <Button
-            android:id="@+id/btnRegistrarse"
+            android:id="@+id/btnRegistrar"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
